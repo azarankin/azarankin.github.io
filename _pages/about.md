@@ -70,3 +70,4 @@ Name: Arthur Zarankin
 Background: Applied AI, Embedded Vision, Real-Time Systems
 Technologies: C++, Python, CUDA, OpenCV, TensorRT, ROS, Jetson
 Interests: Edge AI · Robotics · Real-Time Video · Optimization
+```
