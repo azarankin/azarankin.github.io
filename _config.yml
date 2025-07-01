@@ -241,6 +241,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jemoji
+  - jekyll-redirect-from
+
 
 whitelist:
 
