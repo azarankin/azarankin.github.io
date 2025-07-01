@@ -8,10 +8,10 @@ permalink: /arthurcam/
 
 <div id="arthurcam-demo" style="background:#222; padding:1em; border-radius:10px; max-width:370px; font-family:sans-serif; color:#eee;">
   <iframe
-    src="https://www.youtube.com/embed/EWZFFhwFOkA?autoplay=1&mute=1&controls=1"
+    src="{{ site.arthurcam_video_url }}?autoplay=1&mute=1"
     style="aspect-ratio:16/9; width:100%; border-radius:8px; border:2px solid #555;"
     title="YouTube video player"
-    allow="autoplay; encrypted-media; fullscreen"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
   </iframe>
 
@@ -80,11 +80,11 @@ permalink: /arthurcam/
   document.getElementById('ac-send').onclick = () => {
     let v = document.getElementById('ac-text').value.trim().slice(0, 10);
     if (!v) return acSetMsg('Enter text!', '#f44');
-    acAction('https://arthurcam.com/api/arduinoIOT/' + encodeURIComponent(v));
+    acAction('{{ site.arthurcam_domain }}/api/arduinoIOT/' + encodeURIComponent(v));
   };
 
-  document.getElementById('ac-led').onclick = () => acAction('https://arthurcam.com/api/arduinoIOT/6');
-  document.getElementById('ac-lamp').onclick = () => acAction('https://arthurcam.com/api/arduinoIOT/2');
+  document.getElementById('ac-led').onclick = () => acAction('{{ site.arthurcam_domain }}/api/arduinoIOT/6');
+  document.getElementById('ac-lamp').onclick = () => acAction('{{ site.arthurcam_domain }}/api/arduinoIOT/2');
 </script>
 
 ---
