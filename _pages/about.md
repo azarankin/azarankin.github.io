@@ -2,7 +2,8 @@
 permalink: /
 title: "Arthur Zarankin Protfolio"
 author_profile: true
-redirect_from: 
+redirect_to: 
+  /robotics/
   # - /about/
   # - /about.html
 ---
