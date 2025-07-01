@@ -1,18 +1,10 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Arthur Zarankin:
+  name        : "Arthur Zarankin"
+  uri         : "https://arthur-zarankin.com"
+  email       : "w3arthur@gmail.com"
+  bio         : "Software Developer specializing in CUDA, AI, and real-time computer vision, with hands-on experience on Jetson, robotics, and performance-critical systems."
+  avatar      : "arthur.jpg"
+  twitter     : 
+  google_plus : 

@@ -11,54 +11,54 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.Sc. in Information Systems, GPA 87  
+  * Open University of Israel  
+  * Focus: Software Engineering, Data Structures, AI fundamentals
 
-Work experience
+* Graduate Diploma Program (in progress)  
+  * Preparing for M.Sc. in Computer Science  
+  * Focus: Linear Algebra, Algorithms, Embedded Systems
+
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2022–2024: CUDA / C++ Developer  
+  * Opteamizer (acquired by Deloitte)  
+  * Worked on high-performance GPU code for real-time image processing  
+  * Tools: C++, CUDA, OpenCV, TensorRT, Jetson
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2024–2025: AI & Robotics Projects (Independent)  
+  * Built multi-camera DeepStream-based tracking systems  
+  * Integrated ASR/NLP/TTS agents with robotics (Jetson NX, ROS)  
+  * Optimized video processing with GStreamer + CUDA pipelines
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming**: C++, Python, CUDA, Bash  
+* **AI / CV Frameworks**: PyTorch, TensorRT, DeepStream, OpenCV  
+* **Hardware**: NVIDIA Jetson (Xavier, Orin NX), Raspberry Pi, STM32  
+* **Video / Audio**: GStreamer, FFmpeg, Hifi-GAN, Tacotron2  
+* **Web / Tools**: Git, Docker, PostgreSQL (with pgvector), FastAPI
 
-Publications
+Projects & Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+Talks & Presentations
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}</ul>
+
+Teaching & Mentorship
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+Service and Leadership
 ======
-* Currently signed in to 43 different slack teams
+* Led independent open-source contributions on GitHub  
+* Created demo content for LinkedIn on AI & robotics  
+* Maintains multiple developer boards for community-based testing

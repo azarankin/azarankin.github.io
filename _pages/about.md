@@ -3,9 +3,10 @@ permalink: /
 title: "Arthur Zarankin Protfolio"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  # - /about/
+  # - /about.html
 ---
+<!-- page under development -->
 
 
 <!-- Header Section -->
