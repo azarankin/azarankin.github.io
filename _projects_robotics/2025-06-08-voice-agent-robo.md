@@ -2,8 +2,13 @@
 title: "Voice Agent on Rosmaster X3 Plus"
 collection: robotics
 date: 2025-06-08
+excerpt: 
+
+
 header:
-  teaser: /images/rosmaster-voice-agent.jpg
+  teaser: /assets/agent.png
+layout: single
+permalink: /agent/
 ---
 
 🚗💬 **Jetson-Based Voice Agent**

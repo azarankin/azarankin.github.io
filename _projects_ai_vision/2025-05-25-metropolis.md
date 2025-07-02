@@ -3,6 +3,7 @@ title: "NVIDIA Metropolis: Real-Time Multi-Camera Tracking"
 collection: projects_ai_vision
 date: 2025-05-25
 author_profile: false
+layout: single
 ---
 
 Built a real-time smart vision system with **NVIDIA Metropolis** for synchronized multi-camera people tracking:
