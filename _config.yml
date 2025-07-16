@@ -202,6 +202,10 @@ kramdown:
   enable_coderay: false
 
 collections:
+  projects:
+    output: true
+    label: "Projects"
+    permalink: /projects/:path/
   projects_robotics:
     output: true
     label: "Robotics & Demos"

@@ -7,12 +7,8 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 main:
-  - title: "Robotics & Demos"
-    url: /robotics/
-  - title: "AI & Vision Projects"
-    url: /ai-vision/
-  - title: "Certifications"
-    url: /certifications/
+  - title: "Projects"
+    url: /projects/
   - title: "Connect"
     url: /connect/
   - title: "CV"

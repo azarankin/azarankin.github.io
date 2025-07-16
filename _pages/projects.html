@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% comment %}
+First show robotics projects
+{% endcomment %}
+{% for post in site.projects_robotics reversed %}
+  {% include archive-single-no-link.html %}
+{% endfor %}
+
+{% comment %}
+Then show AI & Vision projects
+{% endcomment %}
+{% for post in site.projects_ai_vision reversed %}
+  {% include archive-single-no-link.html %}
+{% endfor %}

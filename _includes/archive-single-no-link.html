@@ -63,7 +63,11 @@
     </div>
     {% endif %}
 
-    <br />
+<div style="display:flex; align-items:center; margin: 32px 0;">
+  <hr style="flex:1; border:0; height:3px; background:linear-gradient(to right,#06b6d4,#6366f1); margin:0 12px;">
+  <span style="font-size:1.3em; color:#6366f1; font-weight:bold; letter-spacing:2px;">✦</span>
+  <hr style="flex:1; border:0; height:3px; background:linear-gradient(to left,#06b6d4,#6366f1); margin:0 12px;">
+</div>
 
     {% if post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>

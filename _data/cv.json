@@ -1,6 +1,11 @@
 {
   "sections": [
     {
+      "title": "Projects",
+      "type": "directory",
+      "path": "_projects"
+    },
+    {
       "title": "Robotics & Demos",
       "type": "directory",
       "path": "_projects_robotics"

@@ -6,20 +6,24 @@ author_profile: false
 layout: single
 ---
 
-Built a real-time smart vision system with **NVIDIA Metropolis** for synchronized multi-camera people tracking:
+<div style="margin: 1em 0 0.6em 0; font-weight:bold; color:#06b6d4; font-size:1.10em;">
+  Multi-Camera People Tracking – NVIDIA Metropolis & DeepStream
+</div>
 
-- **Integrated 4 camera feeds** into a unified DeepStream pipeline
-- **Calibrated cameras with homography** for accurate spatial alignment
-- **Mapped TrackIDs** to a shared floorplan with real-time visualization
-- **Generated synchronized overlays** to display tracked people from all camera angles
-
-This project deepened my expertise in real-time computer vision, multi-camera analytics, and DeepStream pipeline engineering.
-
-> Multi-camera people tracking with live spatial mapping and graphical overlays, using homography calibration and DeepStream inside NVIDIA Metropolis.
-
-[🔗 LinkedIn post (full demo and discussion)](https://www.linkedin.com/posts/arthur-zarankin_nvidia-metropolis-computervision-activity-7334719644592685058-L0R5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADRBA_cB4X23WmdFbuX6QgeP7l2Ntu_tqGI)
+<ul style="color:#ccc; margin-left:1.1em; margin-bottom:0.7em; font-size:1em;">
+  <li>📹 <b>4 camera feeds:</b> Unified real-time DeepStream pipeline for people tracking</li>
+  <li>🗺️ <b>Homography calibration:</b> Accurate spatial mapping between cameras & floorplan</li>
+  <li>👁️ <b>TrackIDs mapped live:</b> Consistent IDs & positions visualized on a shared map</li>
+  <li>🎛️ <b>Graphical overlays:</b> Synchronized detection from all angles in one interface</li>
+</ul>
 
 <div align="center">
-  <!-- Optionally add a project image or demo here -->
    <img src="/assets/metropolis.jpg" alt="Multi-Camera Tracking Demo" style="border-radius: 2%; width: 300px; margin-top: 15px;">
+</div>
+
+<div style="display:flex; flex-wrap:wrap; gap:12px; margin:14px 0 4px 0;">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/posts/arthur-zarankin_nvidia-metropolis-computervision-activity-7334719644592685058-L0R5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADRBA_cB4X23WmdFbuX6QgeP7l2Ntu_tqGI"
+     style="display:inline-block; color:#fff; background:#222; border:1px solid #06b6d4; border-radius:6px; padding:6px 18px; font-weight:bold; text-decoration:none;">
+     🔗 Full Demo & Discussion on LinkedIn
+  </a>
 </div>
