@@ -7,26 +7,7 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
   </iframe>
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    setTimeout(function() {
-      var iframe = document.querySelector('#arthurcam-demo iframe');
-      if (iframe) {
-        var src = iframe.src;
-        // הוספת פרמטר dummy תכריח רענון בלי קאש
-        if(src.indexOf('refresh=') === -1) {
-          iframe.src = src + (src.indexOf('?') > -1 ? '&' : '?') + 'refresh=' + Date.now();
-        }
-      }
-    }, 3000); // 3 שניות אחרי הטעינה (אפשר לשנות)
-    document.getElementById('ac-text').addEventListener('input', function(e) {
-      // השאר רק אותיות אנגלית ומספרים
-      this.value = this.value.replace(/[^a-zA-Z0-9]/g, '');
-    });
-  });
 
-  
-</script>
 
   <div style="color:#e53935; font-weight:bold; margin-bottom:6px; font-size:90%; letter-spacing:1px;">
     🔴 Live Stream & Real-Time Control
@@ -43,7 +24,7 @@
     autocorrect="off" 
     autocapitalize="off" 
     spellcheck="false"
-    pattern="[a-zA-Z0-9]*"
+    pattern="[a-zA-Z0-9\s]*"
     title="Only English letters and numbers allowed"
     style="width:100%; padding:0.5em; margin:6px 0; border:1px solid #444; background:#111; color:#fff; border-radius:5px; font-size:1em;">
 
@@ -69,6 +50,68 @@
   </ul>
 </div>
 </div>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function() {
+      var iframe = document.querySelector('#arthurcam-demo iframe');
+      if (iframe) {
+        var src = iframe.src;
+        // הוספת פרמטר dummy תכריח רענון בלי קאש
+        if(src.indexOf('refresh=') === -1) {
+          iframe.src = src + (src.indexOf('?') > -1 ? '&' : '?') + 'refresh=' + Date.now();
+        }
+      }
+    }, 3000); // 3 שניות אחרי הטעינה (אפשר לשנות)
+    document.getElementById('ac-text').addEventListener('input', function(e) {
+      // השאר רק אותיות אנגלית ומספרים
+      this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '');
+    });
+  });
+
+  
+</script>
+
+<script>
+  function acSetMsg(msg, color = '#0f0') {
+    const el = document.getElementById('ac-feedback');
+    el.textContent = msg;
+    el.style.color = color;
+  }
+
+  async function acAction(url) {
+    const buttons = [...document.querySelectorAll('#ac-send,#ac-led,#ac-lamp')];
+    buttons.forEach(b => b.disabled = true);
+
+    acSetMsg('Please wait...', '#ff0');
+
+    try {
+      const res = await fetch(url, { method: 'GET' });
+      console.log('Status:', res.status);
+      await new Promise(r => setTimeout(r, 8000));
+      acSetMsg('Success!', '#0f0');
+    } catch (E) {
+      acSetMsg('Error', '#f44');
+      console.error('Fetch error:', E);
+    }
+
+    await new Promise(r => setTimeout(r, 2000));
+    acSetMsg('Cooldown...', '#ccc');
+    await new Promise(r => setTimeout(r, 2000));
+    acSetMsg('');
+    buttons.forEach(b => b.disabled = false);
+  }
+
+  document.getElementById('ac-send').onclick = () => {
+    let v = document.getElementById('ac-text').value.trim().slice(0, 10);
+    if (!v) return acSetMsg('Enter text!', '#f44');
+    acAction('{{ site.arthurcam_domain }}/api/arduinoIOT/' + encodeURIComponent(v));
+  };
+
+  document.getElementById('ac-led').onclick = () => acAction('{{ site.arthurcam_domain }}/api/arduinoIOT/6');
+  document.getElementById('ac-lamp').onclick = () => acAction('{{ site.arthurcam_domain }}/api/arduinoIOT/2');
+</script>
 
 
 
