@@ -63,7 +63,7 @@
           iframe.src = src + (src.indexOf('?') > -1 ? '&' : '?') + 'refresh=' + Date.now();
         }
       }
-    }, 3000); // 3 שניות אחרי הטעינה (אפשר לשנות)
+    }, 7000); // 7 שניות אחרי הטעינה (אפשר לשנות)
     document.getElementById('ac-text').addEventListener('input', function(e) {
       // השאר רק אותיות אנגלית ומספרים
       this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '');
