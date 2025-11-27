@@ -11,7 +11,7 @@ baseurl                  : ""
 repository               : "azarankin/azarankin.github.io"
 
 arthurcam_domain      : "https://exemplary-presence-production.up.railway.app"
-arthurcam_video_url      : "https://www.youtube.com/embed/sB-wOhZSs1Y"
+arthurcam_video_url      : "https://www.youtube.com/embed/QF5YTK9Pg2U"
 
 certification_logos:
   Udemy: "/assets/certifications/udemy_logo.jpeg"
